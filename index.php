@@ -48,7 +48,7 @@ class CCustomChangePasswordPlugin extends AApiChangePasswordPlugin
     $username = $oAccount->Email;
     $password = $oAccount->PreviousMailPassword; 
     $newpassword = $oAccount->IncomingMailPassword;
-    $loginUrl = 'https://admin.stsmail.ro/postfixadmin/xmlrpc.php';
+    $loginUrl = 'https://host/postfixadmin/xmlrpc.php';
 
     $xmlrpc = new Zend_XmlRpc_Client($loginUrl);
 
